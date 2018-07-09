@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="ccclocalDataSet" targetNamespace="http://tempuri.org/ccclocalDataSet4.xsd" xmlns:mstns="http://tempuri.org/ccclocalDataSet4.xsd" xmlns="http://tempuri.org/ccclocalDataSet4.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="ccclocalConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="ccclocalConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.CarsManagment.Properties.Settings.GlobalReference.Default.ccclocalConnectionString" Provider="MySql.Data.MySqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="appointmentsTableAdapter" GeneratorDataComponentClassName="appointmentsTableAdapter" Name="appointments" UserDataComponentName="appointmentsTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="ccclocalConnectionString (Settings)" DbObjectName="ccclocal.appointments" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT UniqueID, Type, StartDate, EndDate, AllDay, Subject, Location, Description, Status, Label, ResourceID, ResourceIDs, ReminderInfo, RecurrenceInfo, TimeZoneId, CustomField1 FROM appointments</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="ccclocalDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="ccclocalDataSet" msprop:Generator_UserDSName="ccclocalDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="appointments" msprop:Generator_TableClassName="appointmentsDataTable" msprop:Generator_TableVarName="tableappointments" msprop:Generator_TablePropName="appointments" msprop:Generator_RowDeletingName="appointmentsRowDeleting" msprop:Generator_RowChangingName="appointmentsRowChanging" msprop:Generator_RowEvHandlerName="appointmentsRowChangeEventHandler" msprop:Generator_RowDeletedName="appointmentsRowDeleted" msprop:Generator_UserTableName="appointments" msprop:Generator_RowChangedName="appointmentsRowChanged" msprop:Generator_RowEvArgName="appointmentsRowChangeEvent" msprop:Generator_RowClassName="appointmentsRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
